@@ -75,7 +75,7 @@ def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome", help="Browser type: chrome or firefox or Opera.")
     parser.addoption("--versions", action="store", default="100.0")
     parser.addoption("--url", action="store", default="http://192.168.192.149:8180/")
-    parser.addoption("--executor", default="selenoid")
+    parser.addoption("--executor", default="localhost")
     parser.addoption("--log_level", action="store", default="DEBUG")
     parser.addoption("--mobile", action="store_true")
 

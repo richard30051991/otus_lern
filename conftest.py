@@ -103,7 +103,7 @@ def browser(request):
             driver = webdriver.Chrome(desired_capabilities=caps)
         elif browsers == 'chrome':
             options = webdriver.ChromeOptions()
-            driver = webdriver.Chrome(options=options, executable_path=f"{DRIVERS}/chromedriver',
+            driver = webdriver.Chrome(options=options, executable_path=f"{DRIVERS}/chromedriver",
                                       desired_capabilities=caps)
         elif browsers == 'firefox':
             driver = webdriver.Firefox(options=options, executable_path=f"{DRIVERS}/geckodriver",

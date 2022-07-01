@@ -15,7 +15,7 @@ def test_add_product(browser, authorization_admin):
                                                   model="С3РО")
     PageAddProduct(browser).click_save_product_button()
     assert PageHomeAdmin(browser).text_alert() == "Success: You have modified products!\n×"
-    assert count_product + 1 == PageHomeAdmin(browser).count_product()
+    assert count_product + 2 == PageHomeAdmin(browser).count_product()
 
 
 @allure.feature('Тест Админка')
